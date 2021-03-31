@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    console.log(findMax([1,2,7,4,5]));
+    console.log(findMax([1,2,3,4,1001,1,2,3,4,1000,1,2,500,4,5]));
+    function findMax(arr) {
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+</script>
+</html>
